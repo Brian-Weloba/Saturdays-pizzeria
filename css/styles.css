@@ -1,0 +1,78 @@
+#top-image {
+    background-image: url("../img/pizza-bg-color.png");
+    height: 1080px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cover1,
+#cover2,
+#cover3,
+#cover4 {
+    background-image: url("../img/pizza-bg-black.png");
+    height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#cover1 {
+    height: 50px
+}
+
+#cover2 {
+    height: 100px
+}
+
+#cover3 {
+    height: 150px
+}
+
+#cover4 {
+    height: 1080px;
+}
+
+#cover4::after {
+    background-attachment: scroll;
+}
+
+#space1,
+#space2,
+#space3,
+#space4 {
+    background-image: url("../img/pizza-bg-color.png");
+    height: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#space1 {
+    height: 50px;
+}
+
+#space2 {
+    height: 40px;
+}
+
+#space3 {
+    height: 30px;
+}
+
+#space4 {
+    height: 20px;
+}
+
+#menu {
+    background-image: url("../img/grey-background.png");
+    height: 1080px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
