@@ -28,7 +28,7 @@ function myFunction() {
     }
 }
 
-filterSelection("all")
+filterSelection("all");
 
 function filterSelection(c) {
     var x, i;
