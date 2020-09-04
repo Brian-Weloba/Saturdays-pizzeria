@@ -5,6 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
 }
 
 #cover1,
@@ -12,32 +13,30 @@
 #cover3,
 #cover4 {
     background-image: url("../img/pizza-bg-black.png");
-    height: 100px;
+    height: 1080px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    max-width: 100%;
 }
 
 #cover1 {
-    height: 50px
+    height: 50px;
 }
 
 #cover2 {
-    height: 100px
+    height: 100px;
 }
 
 #cover3 {
-    height: 150px
+    height: 150px;
 }
 
 #cover4 {
-    height: 1080px;
-}
-
-#cover4::after {
-    background-attachment: scroll;
+    height: 720px;
+    background-attachment: fixed;
 }
 
 #space1,
@@ -69,6 +68,7 @@
 }
 
 #menu {
+    border-top: 5px solid #fdb913;
     background-image: url("../img/grey-background.png");
     height: 1080px;
     background-attachment: fixed;
