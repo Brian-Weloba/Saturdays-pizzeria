@@ -79,7 +79,7 @@
                     <p>Italian flour, whole tomato sauce, mozzarella, duck fillet (sous vide) secret sauces from abroad, including hazelnut, leek, cucumber, cilantro</p>
                 </div>
                 <div>
-                    <button class="order">To Order</button>
+                    <button class="order" id="myBtn">To Order</button>
                 </div>
             </div>
             <div class="jumbotron filterDiv cheese meat child no-olives" id="pizza">
@@ -237,6 +237,68 @@
             </div>
         </div>
     </div>
+
+    <!--Modal Box-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal Box content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="selected-pizza">
+                <img src="" alt="">
+                <h3></h3>
+            </div>
+            <div id="pizza-size">
+                <p>Pizza Size</p>
+                <form>
+                    <input type="radio" id="small" name="size" value="small">
+                    <label for="small">Small</label><br>
+                    <input type="radio" id="medium" name="size" value="medium">
+                    <label for="medium">Medium</label><br>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large</label><br>
+                </form>
+            </div>
+            <div id="pizza-base">
+                <p>Pizza Base</p>
+                <form>
+                    <input type="radio" id="thin" name="base" value="thin">
+                    <label for="thin">Thin Crust</label><br>
+                    <input type="radio" id="thick" name="base" value="thick">
+                    <label for="thick">Thick Crust</label><br>
+                    <input type="radio" id="cheese-crust" name="base" value="cheese-crust">
+                    <label for="cheese-crust">Cheese Stuffed</label><br>
+                    <input type="radio" id="gluten" name="base" value="gluten">
+                    <label for="gluten">Gluten Free</label><br>
+                </form>
+            </div>
+            <div id="toppings">
+                <p>Pizza Size</p>
+                <form>
+                    <input type="checkbox" id="topping1" name="topping1" value="Bacon">
+                    <label for="topping1"> Bacon</label><br>
+                    <input type="checkbox" id="topping2" name="topping2" value="Cheddar">
+                    <label for="topping2"> Cheddar</label><br>
+                    <input type="checkbox" id="topping3" name="topping3" value="Jalapeno">
+                    <label for="topping3"> Jalapeno</label><br>
+                    <input type="checkbox" id="topping4" name="topping4" value="Ground Beef">
+                    <label for="topping4"> Ground Beef</label><br>
+                    <input type="checkbox" id="topping5" name="topping5" value="Mozzarella">
+                    <label for="topping5"> Mozzarella</label><br>
+                    <input type="checkbox" id="topping6" name="topping6" value="Pepperoni">
+                    <label for="topping6"> Pepperoni</label><br>
+                    <input type="checkbox" id="topping7" name="topping7" value="Beef Steak Pieces">
+                    <label for="topping7"> Beef Steak Pieces</label><br>
+                </form>
+
+            </div>
+            <div id="delivery-location">
+
+            </div>
+        </div>
+
+    </div>
+
     <div class="container-fluid">
 
     </div>
