@@ -26,44 +26,46 @@
 
     <div class="container-fluid" id="menu">
         <!-- Control buttons -->
-        <div class="container-fluid" id="navbar">
+        <div id="placeholder">
+            <div class="container-fluid" id="navbar">
 
-            <div class="flex-container">
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('all')"><img id="all" src="img/icons/pizza.png" alt="cheese"></button>
-                    <span class="caption">Show All</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('cheese')"><img id="cheese" src="img/icons/cheese-color.svg" alt="cheese"></button>
-                    <span class="caption">Cheese</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('child')"><img id="child"  src="img/icons/child-color.svg" alt="For children"></button>
-                    <span class="caption">Kids</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('hot')"><img id="hot" src="img/icons/hot-color.svg" alt="Hot"></button>
-                    <span class="caption">Hot</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('meat')"><img id="meat" src="img/icons/meat-color.svg" alt="meat"></button>
-                    <span class="caption">Meat</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('no-mushroom')"><img id="mushroom" src="img/icons/mushroom-color.svg" alt="no mushroom"></button>
-                    <span class="caption">Without mushroom</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('no-olives')"><img id="olives" src="img/icons/olives-color.svg" alt="no olives"></button>
-                    <span class="caption">Without olives</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('no-onions')"><img id="onions" src="img/icons/onions-color.svg" alt="no onions"></button>
-                    <span class="caption">Without onions</span>
-                </div>
-                <div id="icon">
-                    <button class="btn" onclick="filterSelection('veggie')"><img id="veggie" src="img/icons/veggie-color.svg" alt="veggie"></button>
-                    <span class="caption">Veggie</span>
+                <div class="flex-container">
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('all')"><img id="all" src="img/icons/pizza.png" alt="cheese"></button>
+                        <span class="caption">Show All</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('cheese')"><img id="cheese" src="img/icons/cheese-color.svg" alt="cheese"></button>
+                        <span class="caption">Cheese</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('child')"><img id="child"  src="img/icons/child-color.svg" alt="For children"></button>
+                        <span class="caption">Kids</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('hot')"><img id="hot" src="img/icons/hot-color.svg" alt="Hot"></button>
+                        <span class="caption">Hot</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('meat')"><img id="meat" src="img/icons/meat-color.svg" alt="meat"></button>
+                        <span class="caption">Meat</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('no-mushroom')"><img id="mushroom" src="img/icons/mushroom-color.svg" alt="no mushroom"></button>
+                        <span class="caption">Without mushroom</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('no-olives')"><img id="olives" src="img/icons/olives-color.svg" alt="no olives"></button>
+                        <span class="caption">Without olives</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('no-onions')"><img id="onions" src="img/icons/onions-color.svg" alt="no onions"></button>
+                        <span class="caption">Without onions</span>
+                    </div>
+                    <div id="icon">
+                        <button class="btn" onclick="filterSelection('veggie')"><img id="veggie" src="img/icons/veggie-color.svg" alt="veggie"></button>
+                        <span class="caption">Veggie</span>
+                    </div>
                 </div>
             </div>
 
@@ -81,6 +83,9 @@
                 <div class="pizza-des">
                     <h3>Some kind of game</h3>
                     <p>Italian flour, whole tomato sauce, mozzarella, duck fillet (sous vide) secret sauces from abroad, including hazelnut, leek, cucumber, cilantro</p>
+                </div>
+                <div>
+                    <button class="order">To Order</button>
                 </div>
             </div>
             <div class="jumbotron filterDiv cheese meat child no-olives" id="pizza">
@@ -241,28 +246,6 @@
     <div class="container-fluid">
 
     </div>
-
-    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-    <!--<div class="container">
-            <div class="filterDiv cars">BMW</div>
-            <div class="filterDiv colors fruits">Orange</div>
-            <div class="filterDiv cars">Volvo</div>
-            <div class="filterDiv colors">Red</div>
-            <div class="filterDiv cars animals">Mustang</div>
-            <div class="filterDiv colors">Blue</div>
-            <div class="filterDiv animals">Cat</div>
-            <div class="filterDiv animals">Dog</div>
-            <div class="filterDiv fruits">Melon</div>
-            <div class="filterDiv fruits animals">Kiwi</div>
-            <div class="filterDiv fruits">Banana</div>
-            <div class="filterDiv fruits">Lemon</div>
-            <div class="filterDiv animals">Cow</div>
-        </div>-->
-    <!--<div class="container-fluid" id="navbar">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-        </div>-->
     </div>
     <div class="container-fluid" id="bottom"></div>
     <script src="js/jquery-3.5.1.js"></script>
