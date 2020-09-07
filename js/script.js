@@ -24,7 +24,6 @@ var sticky = navbar.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
-        $("#menu-items").css("margin-top", "160px");
     } else {
         navbar.classList.remove("sticky");
     }
