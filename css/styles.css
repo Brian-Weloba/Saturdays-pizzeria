@@ -76,6 +76,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px;
+    position: relative;
 }
 
 .sidenav {
@@ -100,7 +101,7 @@
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #f2f2f2;
 }
 
 @media screen and (max-height: 450px) {
@@ -118,6 +119,7 @@
     width: 100%;
     padding: 10px 10px 10px 170px;
     height: max-content;
+    z-index: 1;
 }
 
 
@@ -244,6 +246,6 @@
 /* The "show" class is added to the filtered elements */
 
 .show {
-    background-color: #f1f1f1;
+    background-color: #f2f2f2;
     display: flex;
 }
