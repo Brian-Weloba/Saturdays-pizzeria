@@ -30,35 +30,39 @@
 
             <div class="flex-container">
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('cars')"><img src="img/icons/cheese-bw.svg" alt="cheese"></button>
+                    <button class="btn" onclick="filterSelection('all')"><span class="caption">Show All</span></button>
+
+                </div>
+                <div id="icon">
+                    <button class="btn" onclick="filterSelection('cheese')"><img id="cheese" src="img/icons/cheese-color.svg" alt="cheese"></button>
                     <span class="caption">Cheese</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('animals')"><img src="img/icons/child-bw.svg" alt="For children"></button>
+                    <button class="btn" onclick="filterSelection('child')"><img id="child"  src="img/icons/child-color.svg" alt="For children"></button>
                     <span class="caption">Kids</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('colors')"><img src="img/icons/hot-bw.svg" alt="Hot"></button>
+                    <button class="btn" onclick="filterSelection('hot')"><img id="hot" src="img/icons/hot-color.svg" alt="Hot"></button>
                     <span class="caption">Hot</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('fruits')"><img src="img/icons/meat-bw.svg" alt="meat"></button>
+                    <button class="btn" onclick="filterSelection('meat')"><img id="meat" src="img/icons/meat-color.svg" alt="meat"></button>
                     <span class="caption">Meat</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('cars')"><img src="img/icons/mushroom-bw.svg" alt="no mushroom"></button>
+                    <button class="btn" onclick="filterSelection('no-mushroom')"><img id="mushroom" src="img/icons/mushroom-color.svg" alt="no mushroom"></button>
                     <span class="caption">Without mushroom</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('cars')"><img src="img/icons/olives-bw.svg" alt="no olives"></button>
+                    <button class="btn" onclick="filterSelection('no-olives')"><img id="olives" src="img/icons/olives-color.svg" alt="no olives"></button>
                     <span class="caption">Without olives</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('cars')"><img src="img/icons/onions-bw.svg" alt="no onions"></button>
+                    <button class="btn" onclick="filterSelection('no-onions')"><img id="onions" src="img/icons/onions-color.svg" alt="no onions"></button>
                     <span class="caption">Without onions</span>
                 </div>
                 <div id="icon">
-                    <button class="btn" onclick="filterSelection('cars')"><img src="img/icons/veggie-bw.svg" alt="veggie"></button>
+                    <button class="btn" onclick="filterSelection('veggie')"><img id="veggie" src="img/icons/veggie-color.svg" alt="veggie"></button>
                     <span class="caption">Veggie</span>
                 </div>
             </div>
@@ -69,9 +73,177 @@
             <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
             <button class="btn" onclick="filterSelection('colors')"> Colors</button>-->
         </div>
+        <div class="flex-container" id="menu-items">
+            <div class="jumbotron filterDiv meat cheese no-mushroom no-olives no-onions" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-2.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Some kind of game</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, duck fillet (sous vide) secret sauces from abroad, including hazelnut, leek, cucumber, cilantro</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese meat no-olives" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-3.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Chicken with mushrooms</h3>
+                    <p>Italian flour, parmesan and cream sauce, mozzarella, dorblu, baked chicken, mushrooms, Bulgarian pepper, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv meat hot" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-4.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>With Bacon</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, dorblu, dry-cured bacon, hot pepper, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv meat" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-5.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Marrakesh</h3>
+                    <p>Italian flour, truffle sauce, mozzarella, duck fillet (sous vide), figs, brie, almonds, pomegranate sauce</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv child" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-6.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Salami</h3>
+                    <p>Italian flour, mozzarella, whole tomato sauce, premium salami, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv hot" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-9.png">
+                </div>
+                <div class="pizza-des">
+                    <h3>Bavarian</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, pepperoni, hunting sausages, bell pepper, olives, Pesto sauce, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-8.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Margarita</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, tomatoes, pesto sauce, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv meat" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-7.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Multi meat</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, beef, boiled pork, pepperoni, hunting sausages, Bulgarian pepper, Crimean onion, barbecue sauce, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-10.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>With goat cheese</h3>
+                    <p>Italian flour, creamy sauce according to someone's grandmother's secret recipe, mozzarella, goat cheese, root vegetables, pine nuts</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv veggie" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-11.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Prosciutto</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, PROSCUITTO, rucolla, cherry tomatoes, sun-dried tomato, capers, oregano, parmesan</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv meat " id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-12.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>With Turkey</h3>
+                    <p>Italian flour, mozzarella, cream sauce, turkey, orange, almonds, mixed greens / arugula, cranberries, orange mustard</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-13.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>With porcini mushrooms and canterelles</h3>
+                    <p>Italian flour, truffle sauce, mozzarella, porcini mushrooms, chanterelles, champignons, sweet onions, green onions</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv veggie hot" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-14.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Pepperoni</h3>
+                    <p>Italian flour, Mozzarella, whole tomato sauce, real Italian pepperoni, hot peppers, capers, oregano</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-15.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Capricciosa classic</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, bacon, tomatoes, mushrooms, olives</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-16.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Premium cheese</h3>
+                    <p>Italian flour, cream and parmesan sauce, mozzarella, DorBlue, parmesan, walnut, cranberry</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-17.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>With lamb</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, lamb, baked eggplant, tomato salsa, sweet onion, basil, secret sauce</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv cheese meat" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-18.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>With roast beef and porcini mushrooms</h3>
+                    <p>Italian flour, truffle sauce, mozzarella, roast beef, porcini mushrooms, tomatoes, green onions</p>
+                </div>
+            </div>
+            <div class="jumbotron filterDiv hot" id="pizza">
+                <div class="circle">
+                    <img src="img/pizza/pizza-1.jpeg">
+                </div>
+                <div class="pizza-des">
+                    <h3>Chicken with pineapple</h3>
+                    <p>Italian flour, whole tomato sauce, mozzarella, baked chicken, pineapple, bell pepper, orange mustard, cranberry, oregano</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
 
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="container">
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <!--<div class="container">
             <div class="filterDiv cars">BMW</div>
             <div class="filterDiv colors fruits">Orange</div>
             <div class="filterDiv cars">Volvo</div>
@@ -85,8 +257,8 @@
             <div class="filterDiv fruits">Banana</div>
             <div class="filterDiv fruits">Lemon</div>
             <div class="filterDiv animals">Cow</div>
-        </div>
-        <!--<div class="container-fluid" id="navbar">
+        </div>-->
+    <!--<div class="container-fluid" id="navbar">
             <a href="#home">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
