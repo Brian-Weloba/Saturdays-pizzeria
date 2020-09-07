@@ -4,16 +4,17 @@
 <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <div class="sidenav">
+    <!-- <div class="sidenav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#clients">Clients</a>
         <a href="#contact">Contact</a>
-    </div>
+    </div> -->
 
     <div class="container-fluid" id="top-image"></div>
     <div class="container-fluid" id="cover1"></div>
@@ -244,23 +245,25 @@
         <!-- Modal Box content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div id="selected-pizza">
-                <img src="" alt="">
-                <h3></h3>
+            <div class="container-flex" id="pizza-sel">
+                <!-- <img id="selected-pizza" src="img/pizza/pizza-3.jpeg" alt=""> -->
+
             </div>
+            <h3>Type</h3>
             <div id="pizza-size">
-                <p>Pizza Size</p>
-                <form>
-                    <input type="radio" id="small" name="size" value="small">
-                    <label for="small">Small</label><br>
-                    <input type="radio" id="medium" name="size" value="medium">
-                    <label for="medium">Medium</label><br>
-                    <input type="radio" id="large" name="size" value="large">
-                    <label for="large">Large</label><br>
-                </form>
+                <h4>Pizza Size</h4>
+                <ul>
+                    <li><input class="radio" type="radio" id="small" name="size" value="small">
+                        <label class="label" for="small"><span>Small</span></label><span class="price">price</span></li>
+                    <li><input class="radio" type="radio" id="medium" name="size" value="medium">
+                        <label class="label" for="medium"><span>Medium</span></label><span class="price">price</span></li>
+                    <li><input class="radio" type="radio" id="large" name="size" value="large">
+                        <label class="label" for="large"><span>Large</span></label><span class="price">price</span><br></li>
+                </ul>
+
             </div>
             <div id="pizza-base">
-                <p>Pizza Base</p>
+                <h4>Pizza Base</h4>
                 <form>
                     <input type="radio" id="thin" name="base" value="thin">
                     <label for="thin">Thin Crust</label><br>
@@ -273,7 +276,7 @@
                 </form>
             </div>
             <div id="toppings">
-                <p>Pizza Size</p>
+                <h4>Pizza Size</h4>
                 <form>
                     <input type="checkbox" id="topping1" name="topping1" value="Bacon">
                     <label for="topping1"> Bacon</label><br>
@@ -292,16 +295,31 @@
                 </form>
 
             </div>
-            <div id="delivery-location">
+            <div class="mi__add-btn">
+                <h4>Quantity</h4>
+                <div class="input-group inline-group">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary btn-minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                    </div>
+                    <input class="form-control quantity" min="1" name="quantity" value="1" type="number">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary btn-plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
 
             </div>
+
         </div>
 
-    </div>
+        <div class="container-fluid">
 
-    <div class="container-fluid">
-
-    </div>
+        </div>
     </div>
     <div class="container-fluid" id="bottom"></div>
     <script src="js/jquery-3.5.1.js"></script>

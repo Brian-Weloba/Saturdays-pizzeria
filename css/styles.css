@@ -117,7 +117,7 @@
     overflow: hidden;
     background-color: #f2f2f2;
     width: 100%;
-    padding: 10px 10px 10px 170px;
+    padding: 10px 10px 10px 10px;
     height: max-content;
     z-index: 1;
     border-bottom: 5px solid #000;
@@ -239,7 +239,6 @@
 #menu-items {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 160px;
     margin-top: 60px;
 }
 
@@ -306,8 +305,9 @@
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border: 5px solid #fdb913;
+    width: 50%;
+    max-width: 100%;
     /* Could be more or less, depending on screen size */
 }
 
@@ -326,4 +326,56 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#pizza-sel {
+    background-image: url(../img/pizza/pizza-3.jpeg);
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.radio {
+    margin: 8px 0 14px;
+}
+
+.price {
+    float: right;
+}
+
+.label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+    width: calc(100% - 80px);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=radio]:checked+label:before {
+    background-color: #fdb913;
+    -webkit-box-shadow: inset 0 0 0 2px #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+    border-color: #fdb913;
+}
+
+.inline-group {
+    max-width: 9rem;
+    padding: .5rem;
+}
+
+.inline-group .form-control {
+    text-align: right;
+}
+
+.form-control[type="number"]::-webkit-inner-spin-button,
+.form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

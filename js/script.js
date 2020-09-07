@@ -61,6 +61,7 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -86,3 +87,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+
+$(document).ready(function() {
+    $("#myBtn").click(function() {
+        // Change src attribute of imag
+        e.preventDefault();
+        $("#selected-pizza").attr("src", "Saturdays-pizzeria/img/pizza/pizza-3.jpeg");
+    });
+});
+
+$('.btn-plus, .btn-minus').on('click', function(e) {
+    const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+    const input = $(e.target).closest('.input-group').find('input');
+    if (input.is('input')) {
+        input[0][isNegative ? 'stepDown' : 'stepUp']();
+    }
+});
