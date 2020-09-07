@@ -76,7 +76,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px;
-    position: relative;
 }
 
 .sidenav {
@@ -90,6 +89,7 @@
     border-right: 5px solid #fdb913;
     overflow-x: hidden;
     padding-top: 20px;
+    z-index: 2;
 }
 
 .sidenav a {
@@ -120,6 +120,7 @@
     padding: 10px 10px 10px 170px;
     height: max-content;
     z-index: 1;
+    border-bottom: 5px solid #000;
 }
 
 
@@ -139,6 +140,7 @@
     top: 0;
     width: 100%;
     padding-top: 60px;
+    transition: 0.2ms;
 }
 
 #bottom {
