@@ -149,9 +149,9 @@
 
 #bottom {
     background-image: url("../img/bottom-page-div.png");
-    height: 1080px;
+    height: 480px;
     background-attachment: scroll;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
