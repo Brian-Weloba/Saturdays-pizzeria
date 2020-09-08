@@ -205,36 +205,99 @@ window.onclick = function(event) {
     }
 };
 
-$(document).ready(function() {
-    $("#myBtn3").click(function() {
-        // Change src attribute of imag
-        e.preventDefault();
-        $("#selected-pizza").attr("src", "Saturdays-pizzeria/img/pizza/pizza-6.jpeg");
-    });
-});
-
 var checkout = document.getElementById("checkout");
 
 // Get the button that opens the modal
-var btn = document.getElementById("checkout-btn");
+var btnO = document.getElementById("checkout-btn");
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("close1")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btnO.onclick = function() {
     modal.style.display = "none";
     checkout.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
-    checkout.style.display = "none";
-};
+// span1.onclick = function() {
+//     checkout.style.display = "none";
+// };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+// window.onclick = function(event) {
 
-};
+// };
 
-// cost calculation
+// cost calculation Backend
+
+var sizePrice, basePrice, toppingPrice, quantity, total, delivery;
+
+function getSizeVal() {
+    var size = document.getElementsByName("size");
+    for (var i = 0, length = size.length; i < length; i++) {
+        if (size[i].checked) {
+            return size[i].value;
+        }
+    }
+}
+
+function getBasePrice() {
+    var base = document.getElementsByName("base");
+    for (var i = 0, length = base.length; i < length; i++) {
+        if (base[i].checked) {
+            return base[i].value;
+        }
+    }
+}
+const toppings = [];
+
+function getToppings() {
+    $("input:checkbox[name=topping]:checked").each(function() {
+        debugger;
+        toppings.push($(this).val());
+        console.log(toppings);
+    });
+}
+
+function getToppingPrice() {
+    getToppings();
+    var toppingsPrice = 0;
+    for (var i = 0, length = toppings.length; i < length; i++) {
+        toppingsPrice += parseInt(toppings[i]);
+    }
+    console.log(toppingsPrice);
+    return toppingsPrice;
+}
+
+$(document).ready(function() {
+    $("#checkout-btn").click(function(event) {
+        debugger;
+        event.preventDefault();
+        sizePrice = parseInt(getSizeVal());
+        console.log(sizePrice);
+        basePrice = parseInt(getBasePrice());
+        console.log(basePrice);
+        var toppingPrice = getToppingPrice();
+        console.log(toppingPrice);
+        total = sizePrice + basePrice + toppingPrice;
+        console.log(total);
+        totalDelivery = total + 350;
+        console.log(totalDelivery);
+
+    });
+});
+
+$("#ordersmade").append(
+    '<tr><td id="pizzaname">' +
+    newOrder.name +
+    '</td><td id="pizzasize">' +
+    newOrder.size +
+    '</td><td id="pizzacrust">' +
+    newOrder.crust +
+    '</td><td id="pizzatopping">' +
+    newOrder.topping +
+    '</td><td id="totals">' +
+    newOrder.total +
+    "</td></tr>"
+);
