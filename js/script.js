@@ -61,13 +61,13 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
-$('.btn-plus, .btn-minus').on('click', function(e) {
-    const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
-    const input = $(e.target).closest('.input-group').find('input');
-    if (input.is('input')) {
-        input[0][isNegative ? 'stepDown' : 'stepUp']();
-    }
-});
+// $('.btn-plus, .btn-minus').on('click', function(e) {
+//     const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+//     const input = $(e.target).closest('.input-group').find('input');
+//     if (input.is('input')) {
+//         input[0][isNegative ? 'stepDown' : 'stepUp']();
+//     }
+// });
 
 
 function changeText(text) {
@@ -231,7 +231,7 @@ btnO.onclick = function() {
 
 // cost calculation Backend
 
-var sizePrice, basePrice, toppingPrice, quantity, total, delivery;
+var sizePrice, basePrice, toppingPrice, quantity, total;
 
 function getSizeVal() {
     var size = document.getElementsByName("size");
@@ -254,7 +254,6 @@ const toppings = [];
 
 function getToppings() {
     $("input:checkbox[name=topping]:checked").each(function() {
-        debugger;
         toppings.push($(this).val());
         console.log(toppings);
     });
@@ -270,9 +269,10 @@ function getToppingPrice() {
     return toppingsPrice;
 }
 
+var totalDelivery = 0;
+
 $(document).ready(function() {
     $("#checkout-btn").click(function(event) {
-        debugger;
         event.preventDefault();
         sizePrice = parseInt(getSizeVal());
         console.log(sizePrice);
@@ -284,20 +284,26 @@ $(document).ready(function() {
         console.log(total);
         totalDelivery = total + 350;
         console.log(totalDelivery);
+        document.getElementById('total-cost').innerHTML = total;
 
     });
 });
 
-$("#ordersmade").append(
-    '<tr><td id="pizzaname">' +
-    newOrder.name +
-    '</td><td id="pizzasize">' +
-    newOrder.size +
-    '</td><td id="pizzacrust">' +
-    newOrder.crust +
-    '</td><td id="pizzatopping">' +
-    newOrder.topping +
-    '</td><td id="totals">' +
-    newOrder.total +
-    "</td></tr>"
-);
+
+$("#final-order").click(function(event) {
+    event.preventDefault();
+
+    var person = $("#name").val();
+    var phone = $("#phone").val();
+    var location = $("#location").val();
+
+    if (
+        $("input#name").val() &&
+        $("input#phone").val() &&
+        $("input#location").val() != ""
+    ) {
+        document.getElementById("finalmessage").innerHTML = "Dear, " + person + ", We have recieved your order, it will be delivered to " + location + ". Kindly prepare sh. " + totalDelivery;
+    } else {
+        document.getElementById("finalmessage").innerHTML = "Please fill in all the details for delivery!";
+    }
+});

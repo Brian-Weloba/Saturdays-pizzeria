@@ -373,7 +373,7 @@
                     </ul>
 
                 </div>
-                <div class="mi__add-btn">
+                <!-- <div class="mi__add-btn">
                     <h4>Quantity</h4>
                     <div class="input-group inline-group">
                         <div class="input-group-prepend">
@@ -388,7 +388,7 @@
                       </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="container-fluid">
                     <button id="checkout-btn">Checkout</button>
                 </div>
@@ -403,8 +403,9 @@
     <div id="checkout" class="modal">
         <div class="modal-content" id="checkout-content">
             <div class="pizza-choice">
-                <h2>Your Order:</h2>
-                <div id="your-orders">
+                <h2>Your Order cost:</h2>
+                <span><h1>ksh. </h1><h1 id="total-cost"></h1></span>
+                <!-- <div id="your-orders">
                     <table class="table table-sm  pizzatable">
                         <thead>
                             <tr>
@@ -431,25 +432,29 @@
                     <p id="totalbill"></p>
                     <p id="addedprice">Delivery fee: ksh. 350</p>
                     <p id="finallmessage"></p>
-                </div>
-                <button class="btn btn-orange addPizza">Add Pizza</button>
-                <button class="btn btn-orange" id="checkout">Checkout</button>
-                <button class="btn btn-orange deliver">Home delivery?</button>
+                </div> -->
             </div>
             <div class="delivery">
+                <h3 id="finalmessage"></h3>
                 <form action="">
+                    <h4>Delivery Details</h4>
                     <div class="form-group">
                         <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                         <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
                         <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
                         <button class="btn btn-orange" id="final-order">Place Order</button>
                     </div>
+
                 </form>
             </div>
         </div>
     </div>
     </div>
-    <div class="container-fluid" id="bottom"></div>
+    <div class="container-fluid" id="bottom">
+        <div class="container-fluid">
+
+        </div>
+    </div>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/script.js"></script>
 </body>
