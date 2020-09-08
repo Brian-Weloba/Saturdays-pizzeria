@@ -61,45 +61,151 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
-
-$(document).ready(function() {
-    $("#myBtn").click(function() {
-        // Change src attribute of imag
-        e.preventDefault();
-        $("#selected-pizza").attr("src", "Saturdays-pizzeria/img/pizza/pizza-3.jpeg");
-    });
-});
-
 $('.btn-plus, .btn-minus').on('click', function(e) {
     const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
     const input = $(e.target).closest('.input-group').find('input');
     if (input.is('input')) {
         input[0][isNegative ? 'stepDown' : 'stepUp']();
     }
+});
+
+
+function changeText(text) {
+
+    document.getElementById('chgtext').innerHTML = text;
+
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
+var btn6 = document.getElementById("myBtn6");
+var btn7 = document.getElementById("myBtn7");
+var btn8 = document.getElementById("myBtn8");
+var btn9 = document.getElementById("myBtn9");
+var btn10 = document.getElementById("myBtn10");
+var btn11 = document.getElementById("myBtn11");
+var btn12 = document.getElementById("myBtn12");
+var btn13 = document.getElementById("myBtn13");
+var btn14 = document.getElementById("myBtn14");
+var btn15 = document.getElementById("myBtn15");
+var btn16 = document.getElementById("myBtn16");
+var btn17 = document.getElementById("myBtn17");
+var btn18 = document.getElementById("myBtn18");
+var sel = document.getElementById("select");
+var span = document.getElementsByClassName("close")[0];
+btn1.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel1");
+    changeText("Chicken with pineapple");
+};
+btn2.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel2");
+    changeText("Some kind of game");
+};
+btn3.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel3");
+    changeText("Chicken with mushroom");
+};
+btn4.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel4");
+    changeText("With Bacon");
+};
+btn5.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel5");
+    changeText("Marrakesh");
+};
+btn6.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel6");
+    changeText("Salami");
+};
+btn7.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel7");
+    changeText("Multi meat");
+};
+btn8.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel8");
+    changeText("Margarita");
+};
+btn9.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel9");
+    changeText("Bavarian");
+};
+btn10.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel10");
+    changeText("With goat cheese");
+};
+btn11.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel11");
+    changeText("Prosciutto");
+};
+btn12.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel12");
+    changeText("With Turkey");
+};
+btn13.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel13");
+    changeText("With porcini mushrooms and canterelles");
+};
+btn14.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel14");
+    changeText("Pepperoni");
+};
+btn15.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel15");
+    changeText("Capricciosa classic");
+};
+btn16.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel16");
+    changeText("Premium cheese");
+};
+
+btn17.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel17");
+    changeText("With lamb");
+};
+btn18.onclick = function() {
+    modal.style.display = "block";
+    sel.classList.add("pizza-sel18");
+    changeText("With roast beef and porcini mushrooms");
+};
+
+span.onclick = function() {
+    modal.style.display = "none";
+    $("#select").removeClass(this.className.split(' ').pop());
+};
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        $("#select").removeClass(this.className.split(' ').pop());
+
+    }
+};
+
+$(document).ready(function() {
+    $("#myBtn3").click(function() {
+        // Change src attribute of imag
+        e.preventDefault();
+        $("#selected-pizza").attr("src", "Saturdays-pizzeria/img/pizza/pizza-6.jpeg");
+    });
 });

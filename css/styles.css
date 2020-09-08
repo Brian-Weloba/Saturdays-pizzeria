@@ -336,12 +336,83 @@
     cursor: pointer;
 }
 
-#pizza-sel {
-    background-image: url(../img/pizza/pizza-3.jpeg);
+.pizza-sel {
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.pizza-sel1 {
+    background-image: url(../img/pizza/pizza-1.jpeg);
+}
+
+.pizza-sel2 {
+    background-image: url(../img/pizza/pizza-2.jpeg);
+}
+
+.pizza-sel3 {
+    background-image: url(../img/pizza/pizza-3.jpeg);
+}
+
+.pizza-sel4 {
+    background-image: url(../img/pizza/pizza-4.jpeg);
+}
+
+.pizza-sel5 {
+    background-image: url(../img/pizza/pizza-5.jpeg);
+}
+
+.pizza-sel6 {
+    background-image: url(../img/pizza/pizza-6.jpeg);
+}
+
+.pizza-sel7 {
+    background-image: url(../img/pizza/pizza-7.jpeg);
+}
+
+.pizza-sel8 {
+    background-image: url(../img/pizza/pizza-8.jpeg);
+}
+
+.pizza-sel9 {
+    background-image: url(../img/pizza/pizza-9.png);
+}
+
+.pizza-sel10 {
+    background-image: url(../img/pizza/pizza-10.jpeg);
+}
+
+.pizza-sel11 {
+    background-image: url(../img/pizza/pizza-11.jpeg);
+}
+
+.pizza-sel12 {
+    background-image: url(../img/pizza/pizza-12.jpeg);
+}
+
+.pizza-sel13 {
+    background-image: url(../img/pizza/pizza-13.jpeg);
+}
+
+.pizza-sel14 {
+    background-image: url(../img/pizza/pizza-14.jpeg);
+}
+
+.pizza-sel15 {
+    background-image: url(../img/pizza/pizza-15.jpeg);
+}
+
+.pizza-sel16 {
+    background-image: url(../img/pizza/pizza-16.jpeg);
+}
+
+.pizza-sel17 {
+    background-image: url(../img/pizza/pizza-17.jpeg);
+}
+
+.pizza-sel18 {
+    background-image: url(../img/pizza/pizza-18.jpeg);
 }
 
 .radio {
