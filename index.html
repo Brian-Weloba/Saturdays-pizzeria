@@ -309,41 +309,61 @@
                     <li><input class="radio" type="radio" id="medium" name="size" value="medium">
                         <label class="label" for="medium"><span>Medium</span></label><span class="price">price</span></li>
                     <li><input class="radio" type="radio" id="large" name="size" value="large">
-                        <label class="label" for="large"><span>Large</span></label><span class="price">price</span><br></li>
+                        <label class="label" for="large"><span>Large</span></label><span class="price">price</span></li>
                 </ul>
 
             </div>
             <div id="pizza-base">
                 <h4>Pizza Base</h4>
-                <form>
-                    <input type="radio" id="thin" name="base" value="thin">
-                    <label for="thin">Thin Crust</label><br>
-                    <input type="radio" id="thick" name="base" value="thick">
-                    <label for="thick">Thick Crust</label><br>
-                    <input type="radio" id="cheese-crust" name="base" value="cheese-crust">
-                    <label for="cheese-crust">Cheese Stuffed</label><br>
-                    <input type="radio" id="gluten" name="base" value="gluten">
-                    <label for="gluten">Gluten Free</label><br>
-                </form>
+                <ul>
+                    <li><input type="radio" id="thin" name="base" value="thin">
+                        <label for="thin">Thin Crust</label><span class="price">price</span></li>
+                    <li>
+                        <input type="radio" id="thick" name="base" value="thick">
+                        <label for="thick">Thick Crust</label><span class="price">price</span>
+                    </li>
+                    <li>
+                        <input type="radio" id="cheese-crust" name="base" value="cheese-crust">
+                        <label for="cheese-crust">Cheese Stuffed</label><span class="price">price</span>
+                    </li>
+                    <li>
+                        <input type="radio" id="gluten" name="base" value="gluten">
+                        <label for="gluten">Gluten Free</label><span class="price">price</span>
+                    </li>
+                </ul>
             </div>
             <div id="toppings">
                 <h4>Pizza Size</h4>
-                <form>
-                    <input type="checkbox" id="topping1" name="topping1" value="Bacon">
-                    <label for="topping1"> Bacon</label><br>
-                    <input type="checkbox" id="topping2" name="topping2" value="Cheddar">
-                    <label for="topping2"> Cheddar</label><br>
-                    <input type="checkbox" id="topping3" name="topping3" value="Jalapeno">
-                    <label for="topping3"> Jalapeno</label><br>
-                    <input type="checkbox" id="topping4" name="topping4" value="Ground Beef">
-                    <label for="topping4"> Ground Beef</label><br>
-                    <input type="checkbox" id="topping5" name="topping5" value="Mozzarella">
-                    <label for="topping5"> Mozzarella</label><br>
-                    <input type="checkbox" id="topping6" name="topping6" value="Pepperoni">
-                    <label for="topping6"> Pepperoni</label><br>
-                    <input type="checkbox" id="topping7" name="topping7" value="Beef Steak Pieces">
-                    <label for="topping7"> Beef Steak Pieces</label><br>
-                </form>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="topping1" name="topping1" value="Bacon">
+                        <label for="topping1"> Bacon</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="topping2" name="topping2" value="Cheddar">
+                        <label for="topping2"> Cheddar</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="topping3" name="topping3" value="Jalapeno">
+                        <label for="topping3"> Jalapeno</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="topping4" name="topping4" value="Ground Beef">
+                        <label for="topping4"> Ground Beef</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="topping5" name="topping5" value="Mozzarella">
+                        <label for="topping5"> Mozzarella</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="topping6" name="topping6" value="Pepperoni">
+                        <label for="topping6"> Pepperoni</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="topping7" name="topping7" value="Beef Steak Pieces">
+                        <label for="topping7"> Beef Steak Pieces</label><br>
+                    </li>
+                </ul>
 
             </div>
             <div class="mi__add-btn">
@@ -363,7 +383,7 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <button class="checkout">Checkout</button>
+                <button id="checkout-btn">Checkout</button>
             </div>
 
         </div>
@@ -371,6 +391,53 @@
         <div class="container-fluid">
 
         </div>
+    </div>
+    <div id="checkout" class="modal">
+        <div class="modal-content" id="checkout-content">
+            <div class="choise">
+                <h2>Your Order is:</h2>
+                <div id="your-orders">
+                    <table class="table table-sm  pizzatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Topping</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersmade">
+                            <tr>
+                                <td id="pizzaname"></td>
+                                <td id="pizzasize"></td>
+                                <td id="pizzacrust"></td>
+                                <td id="pizzatopping"></td>
+                                <td id="totals"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p id="pizzatotal"></p>
+                    <p id="totalbill"></p>
+                    <p id="addedprice">Delivery will cost sh. 200</p>
+                    <p id="finallmessage"></p>
+                </div>
+                <button class="btn btn-orange addPizza">Add Pizza</button>
+                <button class="btn btn-orange" id="checkout">Checkout</button>
+                <button class="btn btn-orange deliver">Home delivery?</button>
+            </div>
+            <div class="delivery">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                        <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                        <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                        <button class="btn btn-orange" id="final-order">Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     </div>
     <div class="container-fluid" id="bottom"></div>
     <script src="js/jquery-3.5.1.js"></script>

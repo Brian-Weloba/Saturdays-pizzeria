@@ -257,7 +257,7 @@
 }
 
 .order,
-.checkout {
+#checkout-btn {
     border: none;
     background-color: black;
     color: white;
@@ -272,7 +272,7 @@
 }
 
 .order:hover,
-.checkout:hover {
+#checkout-btn:hover {
     background-color: #222222;
 }
 
@@ -459,7 +459,7 @@ input[type=radio]:checked+label:before {
     margin: 0;
 }
 
-.checkout {
+#checkout-btn {
     width: 100%;
 }
 
