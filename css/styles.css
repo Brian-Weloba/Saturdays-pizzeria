@@ -257,7 +257,8 @@
 }
 
 .order,
-#checkout-btn {
+#checkout-btn,
+#final-order {
     border: none;
     background-color: black;
     color: white;
@@ -272,7 +273,7 @@
 }
 
 .order:hover,
-#checkout-btn:hover {
+#checkout-btn:hover #final-order:hover {
     background-color: #222222;
 }
 
