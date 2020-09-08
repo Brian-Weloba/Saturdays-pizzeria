@@ -197,6 +197,7 @@
     padding: 5px;
     flex-direction: column;
     align-items: center;
+    height: 620px;
 }
 
 .circle {
@@ -255,7 +256,8 @@
     display: flex;
 }
 
-.order {
+.order,
+.checkout {
     border: none;
     background-color: black;
     color: white;
@@ -269,8 +271,14 @@
     cursor: pointer;
 }
 
-.order:hover {
+.order:hover,
+.checkout:hover {
     background-color: #222222;
+}
+
+#order-btn {
+    position: absolute;
+    margin-top: 510px;
 }
 
 
@@ -304,7 +312,7 @@
     background-color: #fefefe;
     margin: 15% auto;
     /* 15% from the top and centered */
-    padding: 20px;
+    padding: 20px 100px 20px 100px;
     border: 5px solid #fdb913;
     width: 50%;
     max-width: 100%;
@@ -378,4 +386,8 @@ input[type=radio]:checked+label:before {
 .form-control[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.checkout {
+    width: 100%;
 }
