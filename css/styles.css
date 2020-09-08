@@ -488,7 +488,8 @@ h3 {
 h4,
 h5,
 span,
-button {
+button,
+label {
     font-family: Oswald-reg;
 }
 

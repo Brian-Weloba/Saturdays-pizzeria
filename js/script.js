@@ -236,3 +236,5 @@ span1.onclick = function() {
 window.onclick = function(event) {
 
 };
+
+// cost calculation
