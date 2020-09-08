@@ -391,3 +391,35 @@ input[type=radio]:checked+label:before {
 .checkout {
     width: 100%;
 }
+
+@font-face {
+    font-family: Oswald;
+    src: url("../fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: Oswald-reg;
+    src: url("../fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("../fonts/Oswald-Light.ttf");
+}
+
+h1,
+h2,
+h3 {
+    font-family: Oswald;
+}
+
+h4,
+h5,
+span,
+button {
+    font-family: Oswald-reg;
+}
+
+p {
+    font-family: OpenSans;
+}
